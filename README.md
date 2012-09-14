@@ -1,11 +1,11 @@
-Este proyecto contiene una librería en C# para realizar queries usando lo más parecido posible al álgebra relacional.
+Este proyecto contiene una librerï¿½a en C# para realizar queries usando lo mï¿½s parecido posible al ï¿½lgebra relacional.
 
 ````csharp
 /*
 * Ejemplos de uso:
 */
 //Seleccion
-IQueryable<string> result = Do.Seleccion(p => p.FirstName == "Martinez", People);
+IQueryable<Person> result = Do.Seleccion(p => p.FirstName == "Martinez", People);
 
 //Proyeccion
 IQueryable<string> result = Do.Proyeccion(p => p.FirstName + p.LastName, People);
