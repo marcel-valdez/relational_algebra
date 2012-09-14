@@ -1,4 +1,4 @@
-Este proyecto contiene una librer�a en C# para realizar queries usando lo m�s parecido posible al �lgebra relacional.
+Este proyecto contiene una libreria en C# para realizar queries usando lo mas parecido posible al algebra relacional.
 
 ````csharp
 /*
