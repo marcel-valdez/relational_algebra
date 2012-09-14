@@ -21,6 +21,6 @@ JoinResult<Person, Address> actual = People.Join(p => p.Key, addr => addr.Person
 IQueryable<Person> actual = People.SemiJoin(p => p.Key, addr => addr.PersonKey, Addresses);
 		
 // LeftJoin
-JoinResult<Person, Address> actual = People.LeftJoin(p => p.Key, addr => addr.PersonKey, Addresses);
+IQueryable<JoinResult<Person, Address>> actual = People.LeftJoin(p => p.Key, addr => addr.PersonKey, Addresses);
 
 ````
