@@ -16,7 +16,6 @@ IQueryable<Person> actual = group1.Union(group2);
 // Join
 JoinResult<Person, Address> actual = People.Join(p => p.Key, addr => addr.PersonKey, Addresses);
 
-
 // SemiJoin
 IQueryable<Person> actual = People.SemiJoin(p => p.Key, addr => addr.PersonKey, Addresses);
 		
